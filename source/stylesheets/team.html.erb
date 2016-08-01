@@ -1,0 +1,13 @@
+
+<% members = %w (alex leonore maxime) %>
+
+<div class="container text-center">
+  <ul class="list-inline">
+    <% members.each do |member| %>
+      <li>
+        <%= image_tag "#{member}.png", class: "img-circle" %>
+        <h3><%= member.capitalize %></h3>
+      </li>
+    <% end %>
+  </ul>
+</div>
